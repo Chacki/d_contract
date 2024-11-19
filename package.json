@@ -1,7 +1,7 @@
 {
   "name": "@chacki/d_contract",
-  "version": "0.0.1",
-  "main": "index.js",
+  "version": "0.0.3",
+  "main": "lib/esm/index.js",
   "scripts": {
     "build": "tsc --build tsconfig.json && echo {\"type\": \"module\"} > ./lib/esm/package.json",
     "format": "prettier --write \"src/**/*.ts\"",
