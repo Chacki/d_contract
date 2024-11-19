@@ -1,11 +1,17 @@
 ## **Установка:**
 ***
+### npm install
 ```
+npm install @chacki/d_contract
 ```
-
+### git
+```
+git clone https://github.com/Chacki/d_contract
+```
+***
 ## **Использование:**
 ```javascript
-import {DContract} from "./lib/esm/index.js";
+import {DContract} from "@chacki/d_contract";
 
 const app = new DContract()
 
