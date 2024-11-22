@@ -1,4 +1,4 @@
-import { Api } from '../types/api.js';
+import { Types } from '../types/types.js';
 
 export class Auth {
   username: string;
@@ -12,7 +12,7 @@ export class Auth {
    */
   async createUser() {
     try {
-      const response = await fetch(Api.registration, {
+      const response = await fetch(Types.registration, {
         method: 'POST',
         body: JSON.stringify({ username: this.username }),
         headers: {
@@ -37,7 +37,7 @@ export class Auth {
    */
   async loginUser() {
     try {
-      const response = await fetch(Api.login, {
+      const response = await fetch(Types.login, {
         method: 'POST',
         body: JSON.stringify({ username: this.username }),
         headers: {

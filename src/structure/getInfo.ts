@@ -1,8 +1,8 @@
 import {
-  Api,
+  Types,
   ResponseListClients,
   ResponseStatusClients,
-} from '../types/api.js';
+} from '../types/types.js';
 
 export class GetInfo {
   token: string;
@@ -22,7 +22,7 @@ export class GetInfo {
       if (limit !== undefined) queryParams.append('limit', String(limit));
       if (offset !== undefined) queryParams.append('offset', String(offset));
 
-      const url = `${Api.apiClients}?${queryParams.toString()}`;
+      const url = `${Types.apiClients}?${queryParams.toString()}`;
       const response = await fetch(url, {
         method: 'GET',
         headers: {
@@ -48,7 +48,7 @@ export class GetInfo {
    */
   async getStatusClients(arrUserId: Array<number>) {
     try {
-      const response = await fetch(Api.apiClients, {
+      const response = await fetch(Types.apiClients, {
         method: 'POST',
         body: JSON.stringify({ userIds: arrUserId }),
         headers: {
