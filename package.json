@@ -1,6 +1,6 @@
 {
   "name": "@chacki/d_contract",
-  "version": "0.0.5",
+  "version": "0.1.5",
   "type": "module",
   "main": "lib/esm/index.js",
   "scripts": {
