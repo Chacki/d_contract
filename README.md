@@ -6,7 +6,7 @@ npm install @chacki/d_contract
 ```
 ### git
 ```
-git clone https://github.com/Chacki/d_contract
+git clone https://github.com/Chacki/d_contract.git
 ```
 ***
 ## **Использование:**
